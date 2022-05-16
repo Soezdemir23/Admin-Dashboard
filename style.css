@@ -1,0 +1,130 @@
+:root{
+    --padding-dashboard-top: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    
+    align-items: center;
+    gap: 5px;
+}
+img {
+    color: white;
+    filter: invert(100%);
+    object-fit: scale-down;
+    width: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 5fr;
+    align-content: stretch;
+    height: 100vh; 
+}
+
+/*sidebar*/
+.sidebar {
+    padding-top: var(--padding-dashboard-top);
+    padding-left: 15px;
+    padding-right: 80px;
+    color: white;
+    grid-row: 1/ span 2;
+    background-color: #1992d4;    
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+.sidebar-child > h1 {
+    font-size: large;
+}
+.sidebar-child > nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+/*main*/
+.main  {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 5px;
+    padding-top: var(--padding-dashboard-top);
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+/*searchbar and profile on the right*/
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.search > img {
+    color: black;
+    filter: invert(0%) sepia(1%) saturate(7439%) hue-rotate(347deg) brightness(94%) contrast(94%);
+}
+.profile {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.profile > img {
+    filter: invert(0%);
+}
+.profile > img + img {
+    border-radius: 24px;
+}
+
+input {
+    border-radius: 1rem;
+    width: clamp(12rem, 14rem, 20rem);
+    border-style: solid;
+    border-color: rgba(240, 240, 240, 0.5);
+}
+input:active {
+    border-style: solid;
+    border-color: rgba(240,240,240, 0.9);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-card {
+    display: flex;
+    gap: 5px;
+}
+
+
+.profile-card > img {
+    filter: invert(0%);
+    width: 60px;
+    border-radius: 24px;
+}
+/*content*/
+.content {
+    background-color: tomato;
+    grid-column: 2/3;
+}
+

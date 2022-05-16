@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,75 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-child">
+                <h1><img src="./src/icons/dashboard_FILL0_wght400_GRAD0_opsz48.svg" alt="dashboard">Dashboard</h1>
+            </div>
+            <div class="sidebar-child">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html"><img src="./src/icons/home_FILL0_wght400_GRAD0_opsz48.svg" alt="home">Home</a></li>
+                        <li><a href="#"><img src="./src/icons/face_FILL0_wght400_GRAD0_opsz48.svg" alt="profile">Profile</a></li>
+                        <li><a href="#"><img src="./src/icons/chat_bubble_FILL0_wght400_GRAD0_opsz48.svg" alt="messages">Messages</a></li>
+                        <li><a href="#"><img src="./src/icons/history_FILL0_wght400_GRAD0_opsz48.svg" alt="history">History</a></li>
+                        <li><a href="#"><img src="./src/icons/task_FILL0_wght400_GRAD0_opsz48.svg" alt="tasks">Tasks</a></li>
+                        <li><a href="#"><img src="./src/icons/group_FILL0_wght400_GRAD0_opsz48.svg" alt="groups">Communities</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-child">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="./src/icons/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="settings">Settings</a></li>
+                        <li><a href="#"><img src="./src/icons/help_FILL0_wght400_GRAD0_opsz48.svg" alt="help">Support</a></li>
+                        <li><a href="#"><img src="./src/icons/verified_user_FILL0_wght400_GRAD0_opsz48.svg" alt="privacy">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="top">
+                <div class="search">
+                    <img src="./src/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="bell">
+                    <input type="search" name="search" id="search">
+                </div>
+                <div class="profile">
+                    <img src="./src/icons/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="bell">
+                    <img src="./src/images/profile_picture.png" alt="profile">
+                    <p>Max Mustermann</p>
+                </div>
+            </div>
+        
+            <div class="bottom">
+                <div class="profile-card">
+                    <img src="./src/images/profile_picture.png" alt="profile">
+                    <div>
+                        <h6>Hi there,</h6>
+                        <h2>Max Mustermann (@MM)</h2>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+        
+            </div>
+        
+        </div>
+        <div class="content">
+            <div class="projects"></div>
+            <div class="announcements"></div>
+
+        </div>
+    </div>
 </body>
+
 </html>
