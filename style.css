@@ -41,7 +41,7 @@ img {
     padding-top: var(--padding-dashboard-top);
     padding-left: 15px;
     padding-right: 80px;
-    color: white;
+    color: black;
     grid-row: 1/ span 2;
     background-color: #1992d4;    
     display: flex;
@@ -61,67 +61,30 @@ img {
 .main  {
     background-color: white;
     display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-left: 5px;
     padding-top: var(--padding-dashboard-top);
     padding-bottom: 5px;
     padding-right: 15px;
 }
-/*searchbar and profile on the right*/
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/*classes to be worked on:
++ search
++ profile
++ profile-card
++ buttons
+*/
+
 .search {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
-.search > img {
-    color: black;
-    filter: invert(0%) sepia(1%) saturate(7439%) hue-rotate(347deg) brightness(94%) contrast(94%);
-}
+
 .profile {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-.profile > img {
-    filter: invert(0%);
-}
-.profile > img + img {
-    border-radius: 24px;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
-input {
-    border-radius: 1rem;
-    width: clamp(12rem, 14rem, 20rem);
-    border-style: solid;
-    border-color: rgba(240, 240, 240, 0.5);
-}
-input:active {
-    border-style: solid;
-    border-color: rgba(240,240,240, 0.9);
-}
-
-.bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profile-card {
-    display: flex;
-    gap: 5px;
-}
-
-
-.profile-card > img {
-    filter: invert(0%);
-    width: 60px;
-    border-radius: 24px;
-}
 /*content*/
 .content {
     background-color: tomato;
