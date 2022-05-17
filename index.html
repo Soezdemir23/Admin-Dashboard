@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
@@ -51,20 +51,20 @@
         <div class="main">
             <!--seaarch bar-->
             <div class="search">
-                <img src="./src/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="bell">
+                <img class="main-pics" src="./src/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="bell">
                 <input type="search" name="search" id="search">
             </div>
             <!--profile-->
             <div class="profile">
-                <img src="./src/icons/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="bell">
-                <img src="./src/images/profile_picture.png" alt="profile">
+                <img class="main-pics" src="./src/icons/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="bell">
+                <img class="user-image" src="./src/images/profile_picture.png" alt="profile">
                 <p>Max Mustermann</p>
             </div>
             <!--profile card to welcome the user-->
             <div class="profile-card">
-                <img src="./src/images/profile_picture.png" alt="profile">
+                <img class="user-image" src="./src/images/profile_picture.png" alt="profile">
                 <div>
-                    <h6>Hi there,</h6>
+                    <h3>Hi there,</h3>
                     <h2>Max Mustermann (@MM)</h2>
                 </div>
             </div>
@@ -74,12 +74,39 @@
                 <button>Upload</button>
                 <button>Share</button>
             </div>
-
-
-
         </div>
         <div class="content">
-            <div class="projects"></div>
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="content-container">
+
+                    <div class="project-card">
+                        <div class="summary">
+                            <h5>Title in yo mama</h5>
+                            <p>Bla bla bla bla bla</p>
+                        </div>
+                        <div class="options">
+                            <a href="#"><img src="./src/icons/hotel_class_black_24dp.svg" alt="favorite"></a><a
+                                href="#"><img src="./src/icons/remove_red_eye_black_24dp.svg" alt="observe"></a><a
+                                href="#"><img src="./src/icons/merge_black_24dp.svg" alt="#"></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="summary">
+                            <h5>Title in yo mama</h5>
+                            <p>Bla bla bla bla bla</p>
+                        </div>
+                        <div class="options">
+                            <a href="#"><img src="./src/icons/hotel_class_black_24dp.svg" alt="favorite"></a><a
+                                href="#"><img src="./src/icons/remove_red_eye_black_24dp.svg" alt="observe"></a><a
+                                href="#"><img src="./src/icons/merge_black_24dp.svg" alt="#"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
             <div class="announcements"></div>
 
         </div>
