@@ -58,9 +58,12 @@ img {
     gap: 2.5rem;
     flex-direction: column;
 }
+
+
 .sidebar-child > h1 {
     font-size: var(--consensus-font-size);
 }
+
 .sidebar {
     font-size: calc(var(--consensus-font-size)/1.5);
 }
@@ -69,7 +72,10 @@ img {
     flex-direction: column;
     gap: 0.2rem;
 }
-
+.sidebar-child:first-child{
+    display: flex;
+    color: white;
+}
 /*main*/
 .main  {
     background-color: white;
