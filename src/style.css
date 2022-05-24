@@ -236,10 +236,18 @@ img {
 
 .announcement-card {
     border-bottom: solid grey 1px;
+    padding: 1rem 0;
 }
+
+
+
 
 .announcement-card:last-child{
     border-bottom: none;
+    padding-bottom: 0;
+}
+.announcement-card:first-child {
+    padding-top: 0;
 }
 
 .trending-container {
