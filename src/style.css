@@ -117,6 +117,7 @@ img {
     display: flex;    
     gap: 1rem;
     align-items: center;
+    
 }
 
 .profile-card > img {
@@ -156,6 +157,7 @@ img {
     padding-left: 1rem;
     font-size: larger;
     gap: 1rem;
+    justify-content: center;
 }
 .profile-card {
     display: flex;
